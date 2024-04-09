@@ -34,3 +34,6 @@ To launch the database for the first time (done once per database). Inserting th
 
 Note:
 Unfortunately for the free cluster tier of the atlas databse I chose it is not possible to set search index in the database from code, so the database setup cannot  be fulle reproduced with just this repo. Some interaction with UI is necessary. For this reason for retrieval use already set up `nokia_rag` database.
+
+## Running tests
+Use ```pytest``` command, but the test are likely broken as for now...
