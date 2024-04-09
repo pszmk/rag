@@ -61,3 +61,21 @@ def save_data_as_json_database_document(
     
     return None
     
+def save_output_to_txt(
+    output: List[str],
+    output_save_filename: str
+    ) -> None:
+    r"""A data saving function.
+    
+    The output is saved as a text file.
+    """
+    
+    assert output_save_filename.endswith('.txt'), "output_save_filename must end with '.txt'"
+    
+    data_path = DATA_PATH / output_save_filename
+    
+    with open(data_path, 'w') as file_txt:
+        for line in output:
+            file_txt.write(line + '\n\n')
+    
+    return None
